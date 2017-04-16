@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="In-line preferences" android:key="set_net">
+        <CheckBoxPreference android:title="CheckBox preference" android:key="set_3g"
+            android:summary="This is a CheckBox"
+            />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="set_VPN_Category"
+        android:title="Dialog-based preferences"
+        >
+      <EditTextPreference
+            android:title="Edit text preference"
+            android:summary="an example that uses an edit text dialog "
+          />
+
+        <Preference
+            android:title="list preference"
+            android:key="alter_list"
+            android:summary="an example that uses list dialog"
+            />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Launch preferences">
+
+        <Preference android:title="Screen Preference "
+            android:key="Screen_Preference"
+            android:summary="Shows another screen of preference"
+            android:id="@+id/preference" />
+
+        <Preference android:title="Intent Preference "
+            android:key="Intent_Preference"
+            android:summary="launch a activity from an Intent"
+            android:id="@+id/preference2" />
+    </PreferenceCategory>
+
+    <PreferenceCategory  android:title="Preference attributes">
+        <CheckBoxPreference
+            android:title="Parent CheckBox preference"
+            android:key="parent"
+            android:summary="this is visually a parent"
+            />
+        <CheckBoxPreference
+            android:title="Child CheckBox preference"
+            android:summary="this is visually a child"
+            android:dependency="parent"
+            android:key="child"
+
+            />
+    </PreferenceCategory>
+</PreferenceScreen>

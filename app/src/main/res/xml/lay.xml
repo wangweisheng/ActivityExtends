@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:id="@+id/w1"
+        android:summary="this is a checkbox "
+        android:title="checkbox1"
+        >
+
+
+    </CheckBoxPreference>
+<EditTextPreference
+    android:dialogTitle="输入您的名称："
+    android:key="editTitlePreference"
+    android:summary="简要说明"
+    android:title="输入名称"
+    ></EditTextPreference>
+    <ListPreference
+        android:title="List preference"
+android:summary="plase chose the right one "
+        
+        ></ListPreference>
+
+</PreferenceScreen>
